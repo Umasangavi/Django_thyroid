@@ -1,1 +1,1 @@
-web: gunicorn thyroid_project.wsgi:application
+web: gunicorn thyroid.wsgi --log-file -
