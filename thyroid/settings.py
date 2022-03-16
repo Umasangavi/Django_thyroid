@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-_5yp5%ez!9+mp4^7@+%zii9mojrlp6doe=wd$-2oz_d-htb64k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django-thyroidprediction.herokuapp.com']
 
 
 # Application definition
