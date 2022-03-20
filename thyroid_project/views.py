@@ -1,10 +1,10 @@
 from django.shortcuts import render
+from urllib import request
 import numpy as np
 import joblib as jb
 # Create your views here.
 
 def home(request):
-    if request.method=='GET':
         return render(request,'index.html')
 
 def predict(request):
@@ -24,6 +24,8 @@ def predict(request):
         
         if result ==1 :
             return render(request,'after.html',{'data' : 'Values shows that patient has Hypothyroidism'})
-        else:
+        elif result ==0 :
             return render(request,'after.html',{'data' : 'Happy to say that your values are Normal'})
+        else:
+            return render(request,'after.html',{'data': 'error values'})
 
